@@ -1,19 +1,18 @@
-const Banner = () => {
+const Banner = ({ content }) => {
   return (
     <>
       <section className="container">
         <div className="img-banner hidden">
-          <img src="img/02.png" alt="" />
+          <img src={content.imageUrl} alt="" />
         </div>
         <div className="row mt-3">
-          <h6 className="color-gray text-center">01 NOV 2022</h6>
-          <h6 className="uppercase color-primary text-center">tecnologia</h6>
+          <h6 className="color-gray text-center">{content.date}</h6>
+          <h6 className="uppercase color-primary text-center">
+            {content.category}
+          </h6>
 
-          <h3 className="text-center">O que esperar do cinema em 2023?</h3>
-          <p className="text-center mt-2">
-            Et velit culpa id velit nostrud eiusmod ea officia. Laboris veniam
-            aliqua excepteur sit sit. Incididunt eiusmod ex aliquip.
-          </p>
+          <h3 className="text-center">{content.title}</h3>
+          <p className="text-center mt-2">{content.resume}</p>
           <div className="my-3 flex-center">
             <a href="" className="link color-primary">
               Ler mais

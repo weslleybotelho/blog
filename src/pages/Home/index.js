@@ -1,4 +1,7 @@
 // Components
+import Header from 'pages/Header';
+import Footer from 'pages/Footer';
+
 import Hero from './Hero';
 import Card from './Card';
 import Banner from './Banner';
@@ -11,6 +14,8 @@ import api from 'services/api';
 
 // Hooks
 import { useState, useEffect } from 'react';
+
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [main, setMain] = useState([]);
@@ -29,14 +34,11 @@ const Home = () => {
     api.get('/posts?_limit=3').then(response => {
       setMostseen(response.data);
     });
-
-    console.log(main);
-    console.log(mostseen);
-    console.log(banner);
   }, []);
 
   return (
     <>
+      <Header />
       <Hero />
 
       <section className="container">
@@ -67,11 +69,17 @@ const Home = () => {
         <h3 className="ml-2">Mais vistos</h3>
 
         <div className="row mt-4">
-          <Card />
+          {mostseen.map(item => {
+            return <Card key={item.id} content={item} />;
+          })}
         </div>
       </section>
 
-      <Banner />
+      {banner.map(item => {
+        return <Banner key={item.id} content={item} />;
+      })}
+
+      <Footer />
     </>
   );
 };

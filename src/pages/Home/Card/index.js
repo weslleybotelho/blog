@@ -1,21 +1,18 @@
-const Card = () => {
+const Card = ({ content }) => {
   return (
     <>
       <div className="grid-4 p-0 card">
         <div className="thumb hidden">
           <a href="">
-            <img src="img/01.png" alt="" />
+            <img src={content.imageUrl} alt="" />
           </a>
         </div>
         <div className="mt-2">
-          <h6>01 NOV 2022</h6>
-          <h6 className="uppercase color-primary">tecnologia</h6>
+          <h6 className="color-gray">{content.date}</h6>
+          <h6 className="uppercase color-primary">{content.category}</h6>
 
-          <h4>O que esperar do cinema em 2023?</h4>
-          <p className="mt-2">
-            Et velit culpa id velit nostrud eiusmod ea officia. Laboris veniam
-            aliqua excepteur sit sit. Incididunt eiusmod ex aliquip.
-          </p>
+          <h4>{content.title}</h4>
+          <p className="mt-2">{content.resume}</p>
           <div className="my-3">
             <a href="" className="link color-primary">
               Ler mais

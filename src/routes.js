@@ -1,12 +1,26 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Main from './pages/Main';
-import Article from './pages/Article';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+
+import About from 'pages/About';
+import Contact from 'pages/Contact';
+import Login from 'pages/Login';
+import NotFound from 'pages/NotFound';
+import Post from 'pages/Post';
+import Profile from 'pages/Profile';
+import Search from 'pages/Search';
+import Home from 'pages/Home';
 
 const RoutesApp = () => (
   <BrowserRouter>
     <Routes>
-      <Route exact path="/" Component={Main} />
-      <Route path="/articles/:id" Component={Article} />
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/post/:idPost" element={<Post />} />
+      <Route path="/search" element={<Search />} />
+
+      <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>
 );
