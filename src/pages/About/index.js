@@ -8,21 +8,21 @@ const About = () => {
     <>
       <Header />
 
-      <section class="container">
-        <div class="row">
-          <div class="grid-6">
-            <h1 class="h0">
+      <section className="container">
+        <div className="row">
+          <div className="grid-6">
+            <h1 className="h0">
               blog<span>.</span>
             </h1>
-            <p class="mt-1">
+            <p className="mt-1">
               O blog é um projeto desenvolvido em React.js para o curso
               FrontPush.
             </p>
-            <a href="" class="btn mt-4">
+            <a href="" className="btn mt-4">
               Saber mais
             </a>
           </div>
-          <div class="grid-6">
+          <div className="grid-6">
             <img src={logo} alt="" />
           </div>
         </div>

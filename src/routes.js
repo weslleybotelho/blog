@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import About from 'pages/About';
 import Contact from 'pages/Contact';
@@ -18,7 +18,7 @@ const RoutesApp = () => (
       <Route path="/login" element={<Login />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/post/:idPost" element={<Post />} />
-      <Route path="/search" element={<Search />} />
+      <Route path="/search/:word_search" element={<Search />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>

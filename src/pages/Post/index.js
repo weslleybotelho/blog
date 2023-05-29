@@ -1,9 +1,6 @@
 import Header from 'pages/Header';
 import Footer from 'pages/Footer';
 
-import imgProfile from '../../profile/ny.jpg';
-import imgBanner from '../../img/05.png';
-
 import { useParams } from 'react-router-dom';
 
 import { useEffect, useState } from 'react';
@@ -18,10 +15,10 @@ const Post = () => {
 
   useEffect(() => {
     if (idPost) {
-      api.get('/posts/' + idPost).then(response => {
+      api.get('/posts/' + idPost).then((response) => {
         setPost(response.data);
 
-        api.get('/user/' + response.data.id_user).then(response => {
+        api.get('/user/' + response.data.id_user).then((response) => {
           setUser(response.data);
         });
       });

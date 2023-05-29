@@ -5,7 +5,7 @@ $container-xl: 1440px;
 $container-l: 1216px;
 $container-m: 960px;
 $container-s: 620px;
-$container-xs: 340px;
+$container-xs: 390px;
 $gutter: 32px;
 
 // Mixin of media-queries
@@ -87,7 +87,7 @@ $gutter: 32px;
 
   // clearfix
   &::after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -112,7 +112,7 @@ $gutter: 32px;
 .row {
   // clearfix
   &::after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -368,4 +368,19 @@ $gutter: 32px;
 
 footer {
   background-color: $black-darken;
+}
+
+.footer-icons {
+  @include responsive(xs) {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+
+    .flex-end-row {
+      justify-content: center;
+    }
+  }
 }

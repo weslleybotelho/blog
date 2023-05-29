@@ -1,4 +1,8 @@
 import logo from 'svg/blog-logo2.svg';
+import iconFacebook from 'svg/icon-facebook.svg';
+import iconInstagram from 'svg/icon-instagram.svg';
+import iconTwitter from 'svg/icon-twitter.svg';
+import iconYoutube from 'svg/icon-youtube.svg';
 
 const Footer = () => {
   return (
@@ -47,8 +51,7 @@ const Footer = () => {
             <div className="grid-6">
               <h4>Quer ser avisado dos novos posts do blog?</h4>
               <p className="my-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
-                urna pharetra ut ac, pellentesque.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque.
               </p>
               <div className="flex-start-row">
                 <input type="text" placeholder="Digite o seu e-mail aqui" />
@@ -57,7 +60,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row footer-icons">
             <div className="grid-9">
               <p className="ml-5">
                 2023 | Todos os direitos reservados.
@@ -65,34 +68,18 @@ const Footer = () => {
               </p>
             </div>
             <div className="grid-3">
-              <div className="flex-end-row">
-                <a href="" className="icon-footer">
-                  <img
-                    src="svg/icon-facebook.svg"
-                    alt=""
-                    className="icon-s mr-2"
-                  />
+              <div className="flex-end-row ">
+                <a href="https://www.facebook.com/santtos.weslley" className="icon-footer">
+                  <img src={iconFacebook} alt="" className="icon-s mr-2" />
                 </a>
-                <a href="" className="icon-footer">
-                  <img
-                    src="svg/icon-instagram.svg"
-                    alt=""
-                    className="icon-s mr-2"
-                  />
+                <a href="https://instagram.com/weslleybotelho_" className="icon-footer">
+                  <img src={iconInstagram} alt="" className="icon-s mr-2" />
                 </a>
-                <a href="" className="icon-footer">
-                  <img
-                    src="svg/icon-youtube.svg"
-                    alt=""
-                    className="icon-s mr-2"
-                  />
+                <a href="https://instagram.com/weslleybotelho_" className="icon-footer">
+                  <img src={iconYoutube} alt="" className="icon-s mr-2" />
                 </a>
-                <a href="" className="icon-footer">
-                  <img
-                    src="svg/icon-twitter.svg"
-                    alt=""
-                    className="icon-s mr-5"
-                  />
+                <a href="https://twitter.com/wesdavid_" className="icon-footer">
+                  <img src={iconTwitter} alt="" className="icon-s mr-5" />
                 </a>
               </div>
             </div>

@@ -546,6 +546,20 @@ footer {
   background-color: #0F141F;
 }
 
+@media screen and (max-width: 390px) {
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-icons .flex-end-row {
+    justify-content: center;
+  }
+}
+
 .s-0 {
   margin: 0;
   padding: 0;
@@ -1201,7 +1215,7 @@ footer {
     font-weight: 500;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 390px) {
   .h0 {
     font-family: "Rubik", sans-serif;
     font-size: 32px;
@@ -1226,7 +1240,7 @@ h1 {
     font-weight: 500;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 390px) {
   h1 {
     font-family: "Rubik", sans-serif;
     font-size: 48px;
@@ -1250,7 +1264,7 @@ h2 {
     font-weight: 300;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 390px) {
   h2 {
     font-family: "Rubik", sans-serif;
     font-size: 36px;
@@ -1274,7 +1288,7 @@ h3 {
     font-weight: 300;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 390px) {
   h3 {
     font-family: "Rubik", sans-serif;
     font-size: 28px;
@@ -1298,7 +1312,7 @@ h4 {
     font-weight: 300;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 390px) {
   h4 {
     font-family: "Rubik", sans-serif;
     font-size: 20px;
@@ -1370,7 +1384,7 @@ p {
     font-weight: 200;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 390px) {
   p {
     font-family: "Rubik", sans-serif;
     font-size: 14px;
@@ -1398,7 +1412,7 @@ p {
     font-weight: 300;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 390px) {
   .p1 {
     font-family: "Rubik", sans-serif;
     font-size: 14px;
